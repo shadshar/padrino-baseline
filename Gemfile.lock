@@ -1,9 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    chunky_png (1.4.0)
+    compass (1.0.3)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.2)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.3)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
     concurrent-ruby (1.1.9)
     daemons (1.4.1)
     eventmachine (1.2.7)
+    ffi (1.15.4)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     mail (2.7.1)
@@ -13,6 +27,7 @@ GEM
     mime-types-data (3.2021.0901)
     mini_mime (1.1.2)
     moneta (1.1.1)
+    multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     oj (3.13.9)
@@ -47,15 +62,25 @@ GEM
       mime-types (< 4)
       padrino-core (= 0.15.1)
     padrino-support (0.15.1)
+    pg (1.2.3)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rb-fsevent (0.11.0)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
     ruby2_keywords (0.0.5)
+    sass (3.4.25)
+    sequel (5.49.0)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
+    slim (4.1.0)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
+    temple (0.8.2)
     thin (1.8.1)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -67,10 +92,13 @@ PLATFORMS
   arm64-darwin-20
 
 DEPENDENCIES
-  bundler
+  compass
   oj
   padrino (= 0.15.1)
+  pg
   rack
+  sequel
+  slim
   thin
 
 BUNDLED WITH

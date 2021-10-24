@@ -4,7 +4,7 @@ gem 'oj'
 gem 'thin'
 gem 'rack'
 
-gem 'sass'
+gem 'compass'
 gem 'slim'
 gem 'pg'
 gem 'sequel'
