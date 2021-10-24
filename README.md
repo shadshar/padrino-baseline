@@ -1,3 +1,3 @@
 # padrino baseline
 
-A small docker container acting as my baseline for padrino apps.
+My small baseline container for padrino apps.
