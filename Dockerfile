@@ -9,6 +9,4 @@ RUN gem install bundler
 RUN bundle install && bundle binstubs --all
 
 RUN apt-get -y remove gcc g++ make && apt-get -y autoremove
-RUN rm -f /var/cache/apt/archives/*.deb
-RUN rm -rf /var/cache/apt/archives/partial
-
+RUN apt-get -y clean
