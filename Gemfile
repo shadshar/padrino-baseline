@@ -9,4 +9,4 @@ gem 'slim'
 gem 'pg'
 gem 'sequel'
 
-gem 'padrino', '0.15.1'
+gem 'padrino', '0.15.3'
