@@ -1,4 +1,4 @@
-FROM ruby:3.0.2-slim
+FROM ruby:3.2-slim
 
 RUN apt-get update && apt-get upgrade
 RUN apt-get -y install --no-install-recommends gcc g++ make libpq-dev
